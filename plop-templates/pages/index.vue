@@ -11,7 +11,7 @@
   import { BasicForm, FormSchema } from '/@/components/Form';
   import { BasicTable, useTable } from '/@/components/Table';
   import { getSchemas, getColumns } from './data.ts';
-  import { getList } from '/@/api/{module}/{name}Api.ts';
+  import { getList } from '/@/api/{{module}}/{{name}}Api.ts';
 
   const [registerTable, { reload, getForm }] = useTable({
     api: getList,
